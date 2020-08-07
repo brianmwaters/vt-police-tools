@@ -3,4 +3,6 @@
 /build/
 /dist/
 /env/
+/vt_police_tools/data/*/*/imported/*.csv
+/vt_police_tools/migrations/*.log
 __pycache__/

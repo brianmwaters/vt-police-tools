@@ -84,4 +84,10 @@ setuptools.setup(
             "./vt_police_tools/migrations/**",
         ),
     },
+    exclude_package_data={
+        "vt_police_tools": [
+            "imported/*.csv",
+            "migrations/*.log",
+        ],
+    },
 )
