@@ -1,6 +1,7 @@
 This directory contains roster data from various police departments, for import
 into `OpenOversight <https://www.openoversight.com/>`_. For each officer in each
 department, we aim to have the following data:
+
 - First name
 - Last name
 - Middle initial
