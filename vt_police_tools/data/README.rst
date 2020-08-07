@@ -31,7 +31,7 @@ contains the files we obtain via public records requests. Relevant sections from
 each file are then converted to CSV files on an ad-hoc basis, and placed in
 ``digitized/``. This is done in such a way as to represent the original source
 data as closely as possible. The resulting CSV files are then filtered and
-cleaned using the tools in this repository, and placed in ``cleaned/``. This
+cleaned using the `Pandas scripts <../>`_, and placed in ``cleaned/``. This
 cleaned data is then imported into OpenOversight using the `migration scripts
 <../scripts/migrations>`_. These append a department ID column onto each CSV;
 the data is then finally logged under ``imported/`` exactly as it is imported
