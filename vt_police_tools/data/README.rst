@@ -33,6 +33,6 @@ each file are then converted to CSV files on an ad-hoc basis, and placed in
 data as closely as possible. The resulting CSV files are then filtered and
 cleaned using the `Pandas scripts <../>`_, and placed in ``cleaned/``. This
 cleaned data is then imported into OpenOversight using the `migration scripts
-<../scripts/migrations>`_. These append a department ID column onto each CSV;
-the data is then finally logged under ``imported/`` exactly as it is imported
-into OpenOversight.
+<../migrations/>`_. These append a department ID column onto each CSV; the data
+is then finally logged under ``imported/`` exactly as it is imported into
+OpenOversight.

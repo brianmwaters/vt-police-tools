@@ -26,7 +26,7 @@ OpenOversight data import
 .. code:: sh
 
     cd ./vt_police_tools/
-    ./scripts/migrations/2020.8-initial.sh
+    ./migrations/2020.8-initial.sh
 
 Development
 ~~~~~~~~~~~
@@ -45,4 +45,4 @@ Contributing
 
 Before submitting a patch, please lint your code by running ``pycodestyle`` and
 ``pydocstyle`` in the root directory, and ``shellcheck`` on all shell scripts.
-Please make sure to also `test <./vt_police_tools/scripts/tests/>`_ your code.
+Please make sure to also `test <./tests/>`_ your code.

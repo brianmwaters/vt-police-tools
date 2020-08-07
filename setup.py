@@ -81,7 +81,7 @@ setuptools.setup(
     package_data={
         "vt_police_tools": _package_data_globs(
             "./vt_police_tools/data/**",
-            "./vt_police_tools/scripts/**",
+            "./vt_police_tools/migrations/**",
         ),
     },
 )
