@@ -1,0 +1,90 @@
+[["X-Mailgun-Spam-Rules", "DKIM_SIGNED, DKIM_VALID, DYN_RDNS_AND_INLINE_IMAGE, HTML_MESSAGE, RCVD_IN_DNSWL_NONE, RDNS_DYNAMIC, SPF_FAIL, SPF_HELO_NONE"], ["X-Mailgun-Dkim-Check-Result", "Pass"], ["X-Mailgun-Spf", "Fail"], ["X-Mailgun-Sscore", "3.1"], ["X-Mailgun-Sflag", "No"], ["X-Mailgun-Incoming", "Yes"], ["X-Envelope-From", "<MRomei@leg.state.vt.us>"], ["Received", "from bolt106a.mxthunder.net (23.0-26.106.172.216.in-addr.arpa [216.172.106.23]) by mxa.mailgun.org with ESMTP id 5ea83803.7fc5745f49b0-smtp-in-n02; Tue, 28 Apr 2020 14:04:51 -0000 (UTC)"], ["Received", "by bolt106a.mxthunder.net (Postfix, from userid 1100)\tid 49BNgk1Z6hz1VFVh; Tue, 28 Apr 2020 07:04:20 -0700 (PDT)"], ["Received", "from GCC02-BL0-obe.outbound.protection.outlook.com (mail-bl2gcc02on2094.outbound.protection.outlook.com [40.107.89.94])\t(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))\t(No client certificate requested)\tby bolt106a.mxthunder.net (Postfix) with ESMTPS id 49BNg53MW6z1VFPg\tfor <92048-61977426@requests.muckrock.com>; Tue, 28 Apr 2020 07:04:17 -0700 (PDT)"], ["Arc-Seal", "i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; b=ijajtp5dUGN4aE9p5AoFOpL8GB4dPGQg2zOHDULZ+3AU5c7f6LiFAsouB8G2Z64ehLqzrsluEjyE20M8YVCgV3FYJcUecLk7Md67ssWH/iVuFl6Vy8Hv9JKlCvWSXIPcQY4B66dgIR4xgmFtWuk+rdH5sMaEGSTsz0b9PrEK6HINP0an1Yqy3U8lhBMfo8XdiLpsUz0v+Sk7LeMyVmka3pVp9a+ik/9F2UQfcqft9SR/xLVDEfp8J9SsQIMtFDqpwOnJYVdN7zdI5JxPD1YXQKFTPqEhnBjIY+qjBLSAAYbKOG1v5sjsnN2auJq8pjt+KMmp3+MfxWTP7zcSejN3gA=="], ["Arc-Message-Signature", "i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=arcselector9901; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=TF3r0TbVIHZuZBzNEWoG01JfMP02bNpAYMbWWBOX2P8=; b=audpzQKxHjzARcofgYXVVRkH4X0GgN04ijwqyIg6sKiyeWV58anrmDoreGIfh2YZcaHKGEUc5gcz0w5Wyvvyr/OVh2N8FWGikL/7TlBNbUm5C71ETr3a4L4iEQB4R4s48i/u0n9C5uPjqJVuuTGB4tmDbcaVzwxqRTJN7Dp8lD1EfbTApifxR+3Hyss+7NoxffWsr2FVcD2htDYlI/6ShI5kcQrV8zmP/Bnn+J8qYZjauV360tQ6Fw9rJGPcK1GhHttdwCb5e1GG9aLboJWMM/G4mQODfTyKN4dd4JyZ3v0JoKD7FVAujP7MdxJOmcswLbxFoe46ks8urKcCAMEkqA=="], ["Arc-Authentication-Results", "i=1; mx.microsoft.com 1; spf=pass smtp.mailfrom=leg.state.vt.us; dmarc=pass action=none header.from=leg.state.vt.us; dkim=pass header.d=leg.state.vt.us; arc=none"], ["Dkim-Signature", "v=1; a=rsa-sha256; c=relaxed/relaxed; d=vtleg.onmicrosoft.com; s=selector2-vtleg-onmicrosoft-com; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=TF3r0TbVIHZuZBzNEWoG01JfMP02bNpAYMbWWBOX2P8=; b=gEeJDa6dYlnN4xAb3Q3v2AN26Dix0lv9XyDK+9CWVXtUQfZ+HZTS+35j10BnvyhklZts1nV4wH7+NU3Njb+uBXKVhqDtv6HJCZzXCFdnN9jy6i5Brm0TkeAcaMGoO5/Mhth+tsaT4xn6EPlRqljLiQprMQkEcIxsCdCt2ZceCHw="], ["Received", "from MN2PR09MB4859.namprd09.prod.outlook.com (2603:10b6:208:223::9) by MN2PR09MB4940.namprd09.prod.outlook.com (2603:10b6:208:217::22) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2937.13; Tue, 28 Apr 2020 13:49:19 +0000"], ["Received", "from MN2PR09MB4859.namprd09.prod.outlook.com ([fe80::6500:8fb:1a59:e8c5]) by MN2PR09MB4859.namprd09.prod.outlook.com ([fe80::6500:8fb:1a59:e8c5%6]) with mapi id 15.20.2937.023; Tue, 28 Apr 2020 13:49:19 +0000"], ["From", "Matthew Romei <MRomei@leg.state.vt.us>"], ["To", "\"92048-61977426@requests.muckrock.com\"\t<92048-61977426@requests.muckrock.com>"], ["Subject", "RE: [External] Vermont Public Records Act Request: Vermont Capitol Police roster"], ["Thread-Topic", "[External] Vermont Public Records Act Request: Vermont Capitol Police roster"], ["Thread-Index", "AQHWGHRGPE0Q16ZT4EajEg0FxLCPoqiOlYcA"], ["Date", "Tue, 28 Apr 2020 13:49:19 +0000"], ["Message-Id", "<MN2PR09MB4859637B93F8890EF2D9CE2AD8AC0@MN2PR09MB4859.namprd09.prod.outlook.com>"], ["References", "<20200422070423.1.4237928D4EB235A2@requests.muckrock.com>"], ["In-Reply-To", "<20200422070423.1.4237928D4EB235A2@requests.muckrock.com>"], ["Accept-Language", "en-US"], ["Content-Language", "en-US"], ["X-Ms-Has-Attach", "yes"], ["X-Ms-Tnef-Correlator", ""], ["Authentication-Results", "requests.muckrock.com; dkim=none (message not signed) header.d=none;requests.muckrock.com; dmarc=none action=none header.from=leg.state.vt.us;"], ["X-Originating-Ip", "[159.105.17.172]"], ["X-Ms-Publictraffictype", "Email"], ["X-Ms-Office365-Filtering-Correlation-Id", "2646ef9f-0235-4b29-ef84-08d7eb7af321"], ["X-Ms-Traffictypediagnostic", "MN2PR09MB4940:|MN2PR09MB4940:"], ["X-Ms-Exchange-Transport-Forked", "True"], ["X-Microsoft-Antispam-Prvs", "<MN2PR09MB49407F4E0278A8E68061664FD8AC0@MN2PR09MB4940.namprd09.prod.outlook.com>"], ["X-Ms-Oob-Tlc-Oobclassifiers", "OLM:9508;"], ["X-Forefront-Prvs", "0387D64A71"], ["X-Forefront-Antispam-Report", "CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:MN2PR09MB4859.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFTY:;SFS:(366004)(396003)(39850400004)(376002)(136003)(346002)(26005)(2906002)(6916009)(316002)(99936003)(81156014)(478600001)(33656002)(7696005)(8936002)(6506007)(9686003)(8676002)(55016002)(53546011)(83080400001)(86362001)(66446008)(66476007)(66616009)(76116006)(64756008)(66556008)(5660300002)(66946007)(71200400001)(186003)(966005)(52536014)(56604003);DIR:OUT;SFP:1102;"], ["X-Ms-Exchange-Senderadcheck", "1"], ["X-Microsoft-Antispam", "BCL:0;"], ["X-Microsoft-Antispam-Message-Info", "ga32T1BamtXY86amCgxbWZC5nm2dqqDm3g6qnWcDXftx6q/UwB2XBdGwKhnX41BYa2iHUmEh1lps5EQD55uw1YS6LjcRet9coUiu/qjWbUg2rqMvaSiSrlJ51R7k6p6kM/Ayz29dSCtlaXb/+xZnksvSPZ3+DjaRqFaEmCWWbKSxlccy7Rd274/4kKgwU2sPe8LJXafFTIRCu7kRd4fyruUpWIh5intaUueklife0wduzRTO/R2kQg9jNgHSc6IZjvE24vxJL90X4gG2OtFKXLXRrQmIyEKOUtMcczh959RhS4GaikkqH27/GSpmg2ZausW0NqfHdAVHpW8bwaXHFOuBRLDNyfWtLcaQGtbD1ztMZQwXY5283m8h801z+owhzAi7TuDBJa66ABA9oVZHWy48k3nY0PyDcXDAvHB9lK4YP3qf81PjfV4Vm1wqfXYBAdfxKH7I8gdSl80ryaPo1C5k08XKiSbcxEFNy8ZfR8+dr7Lz18DgvWgwfyMHubReCRivua550a4uzYJgm1R/afJIMXiJB/dA4DBS4L1AUYgHer8569CJw6PDHDd51dn4P+uwltkPP1dVum6kS06AfA=="], ["X-Ms-Exchange-Antispam-Messagedata", "4S0llCSC9yUB+voz3TpkC6taEa1m+0K3Gqn28R+cKe7j3VsxnOHqCPyRxj/rHfoqmDho/5r6Wydd0LsSg3P/x6ttHIeLpsSzGiyifhf4Volga2t0zDDIC3g8SezfszSJqf2kPr62yKvliRlew2ymhizLh++a27x9ISoaZPoPjVJwOErgcc7EEg2eaF9L1wx4pXreLrkLg8x11PlHeDaxA461T+pUJ7V9J1+OY2KuLo2MdtXWrBz15XXi4dvsxNeuCSJbxzpGNHUPDE6CS9ghAwwjLJl2JQI0LlcPOejx3yaKQzkhpyvJFWJFdhoowfi+D3BGZMFCbeRfxxgRmgt0f/D+QwvoB3Y4PHB+ufDWUzPAfraRP7EwJZIQ3bPw3WNVaZV1pidf/ZK4FUQz8QgPoqUsEgWiC/R7QpEDYmjyFXtNgefy3m97tJ+P6ulfEPSnnfG1rxaA1ZgnPpZpuO48tfrXq2OYm3OLuH5abLsFav/QCbC2GzflKtep1MQzVU3QqVRs5VP9CUt74s5DreKLpvIGSXt/vtaCmeeM4el2/Vq0a4a7mqeFmKEOmJVXJ9wyRchcDX6GIVjTehuDZKMkmhmp1uqwTE+bttCrhyyXuoUfWfAghdYx5bLGzninmyJsUb+G6ZI5tvacOMTPMHHU8hNB++yScFPypXI5++sEzhH+hG52rZyh5yzmwVzRs+HtTYDYX3A/a4FSN+mEoNx/PpMRgd00yCWoivbxbzfFyV++aYow06gQYY341sbH38iOtqf5bqaITwGR5Xa+yYrNYF7sXZbeM9NkDJNYJYMX3K0="], ["Content-Type", "multipart/related; boundary=\"_004_MN2PR09MB4859637B93F8890EF2D9CE2AD8AC0MN2PR09MB4859namp_\"; type=\"multipart/alternative\""], ["Mime-Version", "1.0"], ["X-Originatororg", "leg.state.vt.us"], ["X-Ms-Exchange-Crosstenant-Network-Message-Id", "2646ef9f-0235-4b29-ef84-08d7eb7af321"], ["X-Ms-Exchange-Crosstenant-Originalarrivaltime", "28 Apr 2020 13:49:19.2256 (UTC)"], ["X-Ms-Exchange-Crosstenant-Fromentityheader", "Hosted"], ["X-Ms-Exchange-Crosstenant-Id", "2e9fd76c-58b7-4b41-9b90-d0efa10f401e"], ["X-Ms-Exchange-Crosstenant-Mailboxtype", "HOSTED"], ["X-Ms-Exchange-Crosstenant-Userprincipalname", "Y2hzCwAgmZe/7VfIREuWQb/wn+aMdxLQrwDYKEGjA06xt5BEs2TgpDpP1tsT6dMHjxsRwCSrCkD3VdZengvWxA=="], ["X-Ms-Exchange-Transport-Crosstenantheadersstamped", "MN2PR09MB4940"], ["X-Mxthunder-Rf-Authresults", "bolt106a.mxthunder.net;\tdkim=pass header.d=vtleg.onmicrosoft.com header.s=selector2-vtleg-onmicrosoft-com header.b=gEeJDa6d;\tdmarc=none;\tspf=pass (bolt106a.mxthunder.net: domain of MRomei@leg.state.vt.us designates 40.107.89.94 as permitted sender) smtp.mailfrom=MRomei@leg.state.vt.us"], ["X-Mxthunder-Identifier", "00AF36A5"], ["X-Mxthunder-Ip-Rating", "0, 40.107.89.94, Ugly c=0.237282 p=-0.2 Source Normal"], ["X-Mxthunder-Scan-Result", "0"], ["X-Mxthunder-Rules", "0-0-0-32767-c"], ["X-Mxthunder-Clean", "Yes"], ["X-Mxthunder-Group", "OK"]]
+Greetings,
+
+Almost all of the Data you ask for can be found at https://data.vermont.gov/widgets/jgqy-2smf Detail pay records, including Overtime Pay may be obtained from VT DHR.
+The remaining data you ask for that is eligible for disclosure is below. These records do not contain the Race, Gender or Year of birth for these employees.
+
+
+Romei,Matthew S
+ Chief of Police
+1751
+Manning,Dale F
+ Sergeant
+1752
+Snyder,Kurt I
+ Officer
+1753
+Pearson,Sara Lynn
+ Officer
+1754
+Stacey,Chad A
+ Officer
+1755
+Gould,Jason
+ Officer
+1758
+Hoar,Brian W
+ Officer
+1756
+Aldsworth,Joseph G
+ Officer
+1757
+
+Chief Romei
+
+
+[https://www.cdc.gov/handwashing/images/keep-calm-wash-hands-170x170_1.jpg]
+Matthew S. Romei
+Chief of Police
+Capitol Police Department
+115 State Street - State House
+Montpelier, VT  05633
+Dispatch               (802) 828-2229
+Non-Emergency: (802) 828-2273
+Office                    (802) 828-5594
+
+From: 92048-61977426@requests.muckrock.com <92048-61977426@requests.muckrock.com>
+Sent: Wednesday, April 22, 2020 3:04 AM
+To: Matthew Romei <MRomei@leg.state.vt.us>
+Subject: [External] Vermont Public Records Act Request: Vermont Capitol Police roster
+
+[External]
+
+Vermont Capitol Police Department
+PRA Office
+Vermont State House
+115 State Street
+Montpelier, VT 05633-5301
+
+April 22, 2020
+
+To Whom It May Concern:
+
+Pursuant to the Vermont Public Records Act, I hereby request roster and demographic information regarding the Capitol Police Department. For each officer in the department, please provide documentation sufficient to show:
+- First and last name, and middle initial
+- Race, gender, and year of birth
+- Rank, badge number, and date of employment
+- Job title and unit assignment
+- Salary and overtime pay for 2019 (or FY 2019, whichever is applicable)
+
+The requested documents will be made available to the general public, and this request is not being made for commercial purposes. In the event that there are fees, I would be grateful if you would inform me of the total charges in advance of fulfilling my request. I would prefer the request filled electronically, by e-mail attachment if available or CD-ROM if not. Thank you in advance for your anticipated cooperation in this matter. I look forward to receiving your response to this request within 3 business days, as the statute requires.
+
+Sincerely,
+Brian Waters
+
+Filed via MuckRock.com
+E-mail (Preferred): 92048-61977426@requests.muckrock.com<mailto:92048-61977426@requests.muckrock.com>
+Upload documents directly: https://accounts.muckrock.com/accounts/login/?url_auth_token=AAB3KrPAtSFhHVrk14c_aRZIUiI%3A1jR9Qj%3AB97S0eiGn8cH5sG_f125VSh-qhM&next=https%3A%2F%2Fwww.muckrock.com%2Faccounts%2Flogin%2F%3Fnext%3D%252Faccounts%252Fagency_login%252Fvermont-capitol-police-department-20977%252Fvermont-capitol-police-roster-92048%252F%253Femail%253Dmromei%252540leg.state.vt.us
+Is this email coming to the wrong contact? Something else wrong? Use the above link to let us know.
+
+For mailed responses, please address (see note):
+MuckRock News
+DEPT MR 92048
+411A Highland Ave
+Somerville, MA 02144-2516
+
+PLEASE NOTE: This request is not filed by a MuckRock staff member, but is being sent through MuckRock by the above in order to better track, share, and manage public records requests. Also note that improperly addressed (i.e., with the requester's name rather than "MuckRock News" and the department number) requests might be returned as undeliverable.
+[http://email.requests.muckrock.com/o/eJwNyksOwiAQANDTyHICw0DLgoVGz2H4TJS0pCkfz283b_WyN8YKrqHs75K9ko7WBcXXR1opa5ti1qQ0kuVsg4sqGIzklBHFo0QpCVEulxoUXC4O1ye9HqjNHW8kG5-T--hQZ9rakTZIRxXN13ZULlfY-QN9hMHwGzD7Hw9IKco]
+
+This message has originated from an External Source. Please use caution when opening attachments, clicking links, or responding to this email.
+

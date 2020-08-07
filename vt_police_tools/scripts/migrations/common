@@ -1,0 +1,81 @@
+# Vermont Police Tools - Tools for cleaning Vermont police data
+#
+# Written in 2020 by BTV CopWatch <info@btvcopwatch.org>
+#
+# To the extent possible under law, the author(s) have dedicated all copyright
+# and related and neighboring rights to this software to the public domain
+# worldwide. This software is distributed without any warranty.
+#
+# You should have received a copy of the CC0 Public Domain Dedication along
+# with this software. If not, see
+# <http://creativecommons.org/publicdomain/zero/1.0/>.
+
+# shellcheck shell=bash
+
+set -o errexit -o pipefail -o nounset -o noglob
+
+: "${DATA=./data/}"
+: "${FLASK=docker exec --interactive openoversight_web_1 flask}"
+: "${LOG=${0}.log}"
+
+function usage {
+	echo "usage: [DATA=DIR] [FLASK=CMD] ${0}" 1>&2
+	exit 2
+}
+
+function add_dept {
+	name=${1}
+	short_name=${2}
+
+	dept_id=$(${FLASK} add-department "${name}" "${short_name}" 2>&1 |
+		tee /dev/tty | grep '^Department added with id ' |
+		cut -d ' ' -f 5)
+}
+
+function add_jobs {
+	i=0
+	for job in "${@}"
+	do
+		${FLASK} add-job-title "${dept_id}" "${job}" True "${i}"
+		i=$((i + 1))
+	done
+}
+
+function append_dept_id {
+	i=0
+	while read -r row
+	do
+		if [[ ${i} -eq 0 ]]
+		then
+			echo "department_id,${row}"
+		else
+			echo "${dept_id},${row}"
+		fi
+		i=$((i + 1))
+	done
+}
+
+function bulk_add {
+	args=${1}
+	dept=${2}
+	month=${3}
+	csv=${4}
+
+	cleaned=${DATA}/${dept}/${month}/cleaned/${csv}.csv
+	imported=${DATA}/${dept}/${month}/imported/${csv}.csv
+
+	mkdir --parents "$(dirname "${imported}")"
+	cmd="${FLASK} bulk-add-officers ${args} /dev/stdin"
+	append_dept_id < "${cleaned}" | tee "${imported}" | $cmd
+}
+
+function log {
+	cmd=${1}
+
+	$cmd 2>&1 | tee "${LOG}"
+}
+
+if [[ ${#} -ne 0 ]]
+then
+	usage
+fi

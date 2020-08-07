@@ -1,0 +1,8 @@
+numpy==1.19.1
+pandas==1.1.0
+pycodestyle==2.6.0
+pydocstyle==5.0.2
+python-dateutil==2.8.1
+pytz==2020.1
+six==1.15.0
+snowballstemmer==2.0.0
