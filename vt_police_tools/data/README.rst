@@ -17,7 +17,7 @@ department, we aim to have the following data:
 - Retirement date (if applicable)
 
 We get this data via public records requests and published sources like agency
-websites (see `sources <./SOURCES.rst>`_), and our goal is to to update each
+websites (see `sources <SOURCES.rst>`_), and our goal is to to update each
 department biannually, since the Vermont Police Academy graduates two classes
 per year.
 

@@ -45,7 +45,7 @@ setuptools.setup(
     name="vt-police-tools",
     version=vt_police_tools.__version__,
     description="Tools for cleaning Vermont police data",
-    long_description=_read_readme("./README.rst"),
+    long_description=_read_readme("README.rst"),
     long_description_content_type="text/x-rst",
     keywords="police vermont",
     author="BTV CopWatch",
@@ -80,13 +80,13 @@ setuptools.setup(
     },
     package_data={
         "vt_police_tools": _package_data_globs(
-            "./vt_police_tools/data/**",
-            "./vt_police_tools/migrations/**",
+            "vt_police_tools/data/**",
+            "vt_police_tools/migrations/**",
         ),
     },
     exclude_package_data={
         "vt_police_tools": [
-            "imported/*.csv",
+            "data/*/*/imported/*.csv",
             "migrations/*.log",
         ],
     },

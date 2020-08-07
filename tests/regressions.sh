@@ -14,7 +14,7 @@
 
 set -o errexit -o pipefail -o noglob
 
-: "${DATA=./vt_police_tools/data/}"
+: "${DATA=vt_police_tools/data/}"
 
 function test_ {
 	dept=${1}

@@ -14,7 +14,7 @@
 
 set -o errexit -o pipefail -o nounset -o noglob
 
-: "${DATA=./data/}"
+: "${DATA=data/}"
 : "${FLASK=docker exec --interactive openoversight_web_1 flask}"
 : "${LOG=${0}.log}"
 

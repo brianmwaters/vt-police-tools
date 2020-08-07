@@ -12,7 +12,7 @@
 # with this software. If not, see
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 
-source ./migrations/common
+source migrations/common
 
 function import {
 	add_dept 'Burlington Police Department' BPD
