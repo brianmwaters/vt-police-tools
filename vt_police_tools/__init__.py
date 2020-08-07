@@ -12,4 +12,4 @@
 
 """Tools for cleaning Vermont police data."""
 
-__version__ = "2020.8.post1"
+__version__ = "2020.8.post2"
