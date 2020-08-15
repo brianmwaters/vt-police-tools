@@ -33,6 +33,9 @@ def correct_name(row):
         row["first_name"] = "Luz Maria"
     elif row["last_name"] == "Small" and row["first_name"] == "Phil":
         row["first_name"] = "Philip"
+    elif row["last_name"] == "Beliveau" and row["first_name"] == "Michael J":
+        row["first_name"] = "Michael"
+        row["middle_initial"] = "J"
     return row
 
 
@@ -127,6 +130,7 @@ def clean_annual_report(csv, year):
 
     dirty = pd.read_csv(csv, header=None)
     clean = dirty[0].apply(clean_name)
+    clean = clean.apply(correct_name, axis=1)
     clean["salary"] = dirty[1].apply(utils.clean_salary)
     clean["salary_year"] = year
     clean["salary_is_fiscal_year"] = True
